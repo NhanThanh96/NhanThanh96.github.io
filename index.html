@@ -1,0 +1,2981 @@
+<!DOCTYPE html>
+<html class="no-js" lang="vi">
+
+<head>
+  <title>Thành Công</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/slick.css">
+  <link rel="stylesheet" href="styles/slick-theme.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <header>
+    <!-- Modal -->
+    <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered " role="document">
+        <div class="modal-content modal-lg register-modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close register-modal__close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <h2 class="register-modal__heading">Đăng kí nhận tin tức của chúng tôi</h2>
+            <p class="register-modal__paragraph">Bạn muốn nhanh chóng nhận các tin tức khuyến mại và ưu đãi lớn của chúng tôi hàng tuần ? Hãy đăng kí ngay theo
+              form dưới đây</p>
+            <form action="#" method="POST" class="register-modal__form">
+              <div class="form-group  ">
+                <input type="email" class="form-control inputbox" id="email" placeholder="Nhập email của bạn tại đây..." />
+              </div>
+              <button type="submit" class="button__common button__yellow w-100">Đăng kí</button>
+              <div class="form-group register-modal__checkbox  ">
+                <input type="checkbox" value="none"> Không hiện lại thông báo này
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="header-top ">
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <ul class="col-md-4 header-top__items">
+            <li class="header__item">
+              <a href="#" class="header-top__link">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header-top__link">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header-top__link">
+                <i class="fa fa-pinterest" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header-top__link">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="col-md-4 col-12 header-top__items">
+            <li class="header__item">
+              <a href="register.html" class="header-top__link text-uppercase">Đăng Kí</a>
+            </li>
+            <li class="header__item">
+              <a href="login.html" class="header-top__link text-uppercase">Đăng Nhập</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row flex-nowrap justify-content-between align-items-center header-bottom-display ">
+          <div class="col-md-2 col-sm-2 col-12 header__logo">
+            <h1>
+              <a href="index.html">
+                <img src="images/home/logo.png" alt="Thành Công">
+              </a>
+            </h1>
+          </div>
+          <div class="col-md-8 col-sm-9 col-12 ">
+            <div class="row header-bottom__content">
+              <div class="header-bottom__info">
+                <span class="header-bottom__title">Hotline:</span>
+                <span class="header-bottom__phone">(04) 9500 9650 - (04) 9500 8850</span>
+              </div>
+              <div class="header-bottom__info">
+                <span class="header-bottom__title">Đặt hàng nhanh:</span>
+                <span class="header-bottom__phone">(04) 9500 9650 - (04) 9500 8850</span>
+              </div>
+              <form action="#" class="col-md-5 header-bottom-search ">
+                <input class="form-control form-control-rounded search" type="text" title="Enter search query here.." placeholder="Tìm kiếm..">
+                <button type="submit" class=" header-bottom__icon">
+                  <i class="fa fa-search " aria-hidden="true"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar-expand-lg navbar-dark bg-black">
+      <div class="container">
+        <button class="navbar-toggler menu__button" type="button" data-toggle="collapse" data-target="#myMenu" aria-controls="myMenu"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon navbar__toggler-edit"></span>
+        </button>
+        <div class="cart">
+          <a href="shopping_cart.html">
+            <i class="fa fa-cart-arrow-down cart__icon" aria-hidden="true"></i>
+          </a>
+          <span class="cart__count">4</span>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myMenu">
+          <ul class="navbar-nav menu">
+            <li class="nav-item menu__item active">
+              <a class="menu__link" href="index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item menu__item">
+              <a class="menu__link" href="blog.html">Tin tức</a>
+            </li>
+            <li class="nav-item menu__item">
+              <a class="menu__link" href="product.html">Sản phẩm</a>
+            </li>
+            <li class="nav-item menu__item">
+              <a class="menu__link" href="introduce.html">Giới thiệu</a>
+            </li>
+            <li class="nav-item menu__item">
+              <a class="menu__link" href="contact.html">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+  </header>
+  <div class="main__content">
+      <!-- slider -->
+      <div class="content-slider">
+          <div class="container ">
+            <div class="row">
+              <div class="col-sm-8">
+                <div class="slider">
+                  <div id="mySlider" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                      <li data-target="#mySlider" data-slide-to="0" class="active"></li>
+                      <li data-target="#mySlider" data-slide-to="1"></li>
+                      <li data-target="#mySlider" data-slide-to="2"></li>
+                      <li data-target="#mySlider" data-slide-to="3"></li>
+                    </ul>
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/home/slider/slider1.jpg" alt="Los Angeles" class="slide__img">
+                        <div class="slider__product">
+                          <span class="slider__product-type">Máy khoan đa năng</span>
+                          <span class="slider__product-name">Dewalt</span>
+                          <ul class="slider__product-description">
+                            <li class="slider__product-item">
+                              <i class="fa fa-check slider__product-icon" aria-hidden="true"></i> Thiết kế nhỏ gọn, phù hợp đa mục đích </li>
+                            <li class="slider__product-item">
+                              <i class="fa fa-check slider__product-icon" aria-hidden="true"></i> Thiết kế nhỏ gọn, phù hợp đa mục đích </li>
+                            <li class="slider__product-item">
+                              <i class="fa fa-check slider__product-icon" aria-hidden="true"></i> Thiết kế nhỏ gọn, phù hợp đa mục đích </li>
+                          </ul>
+                          <button type="button" class="btn product__button">Đặt hàng </button>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/home/slider/slider1.jpg" alt="Los Angeles" class="slide__img">
+                        <div class="slider__product">
+                          <span class="slider__product-type">Máy khoan đa năng</span>
+                          <span class="slider__product-name">Dewalt</span>
+                          <ul class="slider__product-description">
+                            <li class="slider__product-item">
+                              <i class="fa fa-check slider__product-icon" aria-hidden="true"></i> Thiết kế nhỏ gọn, phù hợp đa mục đích </li>
+                            <li class="slider__product-item">
+                              <i class="fa fa-check slider__product-icon" aria-hidden="true"></i> Thiết kế nhỏ gọn, phù hợp đa mục đích </li>
+                            <li class="slider__product-item">
+                              <i class="fa fa-check slider__product-icon" aria-hidden="true"></i> Thiết kế nhỏ gọn, phù hợp đa mục đích </li>
+                          </ul>
+                          <button type="button" class="btn product__button">Đặt hàng </button>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/home/slider/slider1.jpg" alt="Los Angeles" class="slide__img">
+                        <div class="slider__product">
+                          <span class="slider__product-type">Máy khoan đa năng</span>
+                          <span class="slider__product-name">Dewalt</span>
+                          <ul class="slider__product-description">
+                            <li class="slider__product-item">
+                              <i class="fa fa-check slider__product-icon" aria-hidden="true"></i> Thiết kế nhỏ gọn, phù hợp đa mục đích </li>
+                            <li class="slider__product-item">
+                              <i class="fa fa-check slider__product-icon" aria-hidden="true"></i> Thiết kế nhỏ gọn, phù hợp đa mục đích </li>
+                            <li class="slider__product-item">
+                              <i class="fa fa-check slider__product-icon" aria-hidden="true"></i> Thiết kế nhỏ gọn, phù hợp đa mục đích </li>
+                          </ul>
+                          <button type="button" class="btn product__button">Đặt hàng </button>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/home/slider/slider1.jpg" alt="Los Angeles" class="slide__img">
+                        <div class="slider__product">
+                          <span class="slider__product-type">Máy khoan đa năng</span>
+                          <span class="slider__product-name">Dewalt</span>
+                          <ul class="slider__product-description">
+                            <li class="slider__product-item">
+                              <i class="fa fa-check slider__product-icon" aria-hidden="true"></i> Thiết kế nhỏ gọn, phù hợp đa mục đích </li>
+                            <li class="slider__product-item">
+                              <i class="fa fa-check slider__product-icon" aria-hidden="true"></i> Thiết kế nhỏ gọn, phù hợp đa mục đích </li>
+                            <li class="slider__product-item">
+                              <i class="fa fa-check slider__product-icon" aria-hidden="true"></i> Thiết kế nhỏ gọn, phù hợp đa mục đích </li>
+                          </ul>
+                          <button type="button" class="btn product__button">Đặt hàng </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="list-group slider-info">
+                  <a href="#" class="d-flex align-items-center slider-info__item active" data-target="#mySlider" data-slide-to="0">
+                    <div class="row">
+                      <div class="col-3 d-flex justify-content-center align-items-center ">
+                        <i class="fa fa-refresh slider-info__icon" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-9 pl-0">
+                        <h3 class="slider-info__heading">Miễn phí vận chuyển</h3>
+                        <p class="slider-info__content">Chúng tôi miễn phí vận chuyển với các đơn hàng trị giá trên 1000.000Đ</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="d-flex align-items-center slider-info__item  " data-target="#mySlider" data-slide-to="1">
+                    <div class="row">
+                      <div class="col-3 d-flex justify-content-center align-items-center ">
+                        <i class="fa fa-refresh slider-info__icon" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-9 pl-0">
+                        <h3 class="slider-info__heading">Miễn phí vận chuyển</h3>
+                        <p class="slider-info__content">Chúng tôi miễn phí vận chuyển với các đơn hàng trị giá trên 1000.000Đ</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="d-flex align-items-center slider-info__item  " data-target="#mySlider" data-slide-to="2">
+                    <div class="row">
+                      <div class="col-3 d-flex justify-content-center align-items-center ">
+                        <i class="fa fa-refresh slider-info__icon" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-9 pl-0">
+                        <h3 class="slider-info__heading">Miễn phí vận chuyển</h3>
+                        <p class="slider-info__content">Chúng tôi miễn phí vận chuyển với các đơn hàng trị giá trên 1000.000Đ</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="d-flex align-items-center slider-info__item  " data-target="#mySlider" data-slide-to="3">
+                    <div class="row">
+                      <div class="col-3 d-flex justify-content-center align-items-center ">
+                        <i class="fa fa-refresh slider-info__icon" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-9 pl-0">
+                        <h3 class="slider-info__heading">Miễn phí vận chuyển</h3>
+                        <p class="slider-info__content">Chúng tôi miễn phí vận chuyển với các đơn hàng trị giá trên 1000.000Đ</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <div class="container">
+      <section class="category">
+        <div class="d-flex justify-content-between align-items-center category__title ">
+          <h2 class="category__heading">
+            <i class="fa fa-th-large category__title-icon " aria-hidden="true"></i> Sản phẩm nổi bật</h2>
+          <div class="d-flex justify-content-between category__pagination">
+            <span class="category__pagination-control hightlight-product__control-pre">
+              <i class="fa fa-caret-left" aria-hidden="true"></i>
+            </span>
+            <span class="category__pagination-control hightlight-product__control-next">
+              <i class="fa fa-caret-right" aria-hidden="true"></i>
+            </span>
+          </div>
+        </div>
+        <div class="row category__content">
+          <div class="col-lg-3 col-md-12 col-12">
+            <ul class="category__sidebar-list">
+              <li class="category__sidebar-item">
+                <a href="#" class="category__sidebar-link">
+                  <i class="fa fa-th-large category__sidebar-icon " aria-hidden="true"></i>
+                  <span> Máy khoan, cắt CNC </span>
+                </a>
+              </li>
+              <li class="category__sidebar-item">
+                <a href="#" class="category__sidebar-link">
+                  <i class="fa fa-th-large category__sidebar-icon " aria-hidden="true"></i>
+                  <span> Máy khoan, cắt CNC </span>
+                </a>
+              </li>
+              <li class="category__sidebar-item">
+                <a href="#" class="category__sidebar-link">
+                  <i class="fa fa-th-large category__sidebar-icon " aria-hidden="true"></i>
+                  <span> Máy khoan, cắt CNC </span>
+                </a>
+              </li>
+              <li class="category__sidebar-item">
+                <a href="#" class="category__sidebar-link">
+                  <i class="fa fa-th-large category__sidebar-icon " aria-hidden="true"></i>
+                  <span> Máy khoan, cắt CNC </span>
+                </a>
+              </li>
+              <li class="category__sidebar-item">
+                <a href="#" class="category__sidebar-link">
+                  <i class="fa fa-th-large category__sidebar-icon " aria-hidden="true"></i>
+                  <span> Máy khoan, cắt CNC </span>
+                </a>
+              </li>
+              <li class="category__sidebar-item">
+                <a href="#" class="category__sidebar-link">
+                  <i class="fa fa-th-large category__sidebar-icon " aria-hidden="true"></i>
+                  <span> Máy khoan, cắt CNC </span>
+                </a>
+              </li>
+              <li class="category__sidebar-item">
+                <a href="#" class="category__sidebar-link">
+                  <i class="fa fa-th-large category__sidebar-icon " aria-hidden="true"></i>
+                  <span> Máy khoan, cắt CNC </span>
+                </a>
+              </li>
+              <li class="category__sidebar-item">
+                <a href="#" class="category__sidebar-link">
+                  <i class="fa fa-th-large category__sidebar-icon " aria-hidden="true"></i>
+                  <span> Máy khoan, cắt CNC </span>
+                </a>
+              </li>
+              <li class="category__sidebar-item">
+                <a href="#" class="category__sidebar-link">
+                  <i class="fa fa-th-large category__sidebar-icon " aria-hidden="true"></i>
+                  <span> Máy khoan, cắt CNC </span>
+                </a>
+              </li>
+              <li class="category__sidebar-item">
+                <a href="#" class="category__sidebar-link">
+                  <i class="fa fa-th-large category__sidebar-icon " aria-hidden="true"></i>
+                  <span> Máy khoan, cắt CNC </span>
+                </a>
+              </li>
+            </ul>
+            <select class="category__sidebar-mobile">
+              <option selected>Máy khoan, cắt CNC</option>
+              <option value="Máy khoan, cắt CNC">Máy khoan, cắt CNC</option>
+              <option value="Máy khoan, cắt CNC">Máy khoan, cắt CNC</option>
+              <option value="Máy khoan, cắt CNC">Máy khoan, cắt CNC</option>
+              <option value="Máy khoan, cắt CNC">Máy khoan, cắt CNC</option>
+            </select>
+          </div>
+          <div class="col-lg-9 col-md-12 col-12 category__products">
+            <div class="row highlight-product__carousel">
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan Red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan Red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan Red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan Red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan Red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan Red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan Red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan Red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan Red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan Red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan Red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="category">
+        <div class="d-flex justify-content-between align-items-center category__title">
+          <h2 class="category__heading">
+            <i class="fa fa-th-large category__title-icon " aria-hidden="true"></i>Sản phẩm mới</h2>
+          <div class="d-flex justify-content-between ">
+            <ul class="nav nav-pills" role="tablist">
+              <li class="nav-item  menu__control-item">
+                <a class="nav-link active menu__control-link" data-toggle="pill" href="#new_drill">Máy khoan</a>
+              </li>
+              <li class="nav-item menu__control-item">
+                <a class="nav-link menu__control-link" data-toggle="pill" href="#new_printer">Máy in 3D</a>
+              </li>
+              <li class="nav-item menu__control-item">
+                <a class="nav-link menu__control-link" data-toggle="pill" href="#new_cnc_machine">Máy CNC</a>
+              </li>
+              <li class="nav-item menu__control-item">
+                <a class="nav-link menu__control-link" data-toggle="pill" href="#new_lathe">Máy tiện</a>
+              </li>
+              <li class="nav-item menu__control-item">
+                <a class="nav-link menu__control-link" data-toggle="pill" href="#new_another">Máy khác</a>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-between category__pagination ">
+              <span class="category__pagination-control new-product__control-prev">
+                <i class="fa fa-caret-left" aria-hidden="true"></i>
+              </span>
+              <span class="category__pagination-control new-product__control-next">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div id="new_drill" class="container tab-pane active p-0">
+            <div class="row new-product__carousel ">
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="new_printer" class="container tab-pane fade p-0">
+            <div class="row new-product__carousel ">
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="new_cnc_machine" class="container tab-pane fade p-0">
+            <div class="row new-product__carousel ">
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="new_lathe" class="container tab-pane fade p-0">
+            <div class="row new-product__carousel ">
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="new_another" class="container tab-pane fade p-0">
+            <div class="row new-product__carousel ">
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product5.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">2.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="banners">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-12 banner">
+            <img src="images/home/banner/banner3.png" alt="banner">
+          </div>
+          <div class="col-md-6 col-sm-6 col-12 banner">
+            <img src="images/home/banner/banner4.jpg" alt="banner">
+          </div>
+        </div>
+      </div>
+      <section class="category">
+        <div class="d-flex justify-content-between align-items-center category__title">
+          <h2 class="category__heading">
+            <i class="fa fa-th-large category__title-icon " aria-hidden="true"></i>Sản phẩm bán chạy</h2>
+          <div class="d-flex justify-content-between ">
+            <ul class="nav nav-pills " role="tablist">
+              <li class="nav-item menu__control-item">
+                <a class="nav-link active menu__control-link" data-toggle="pill" href="#selling-product__drill">Máy khoan</a>
+              </li>
+              <li class="nav-item menu__control-item">
+                <a class="nav-link menu__control-link" data-toggle="pill" href="#selling-product__printer">Máy in 3D</a>
+              </li>
+              <li class="nav-item menu__control-item">
+                <a class="nav-link menu__control-link" data-toggle="pill" href="#selling-product__cnc">Máy CNC</a>
+              </li>
+              <li class="nav-item menu__control-item">
+                <a class="nav-link menu__control-link" data-toggle="pill" href="#selling-product__lathe">Máy tiện</a>
+              </li>
+              <li class="nav-item menu__control-item">
+                <a class="nav-link menu__control-link" data-toggle="pill" href="#selling-product__another">Máy khác</a>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-between category__pagination ">
+              <span class="category__pagination-control selling-product__control-prev">
+                <i class="fa fa-caret-left" aria-hidden="true"></i>
+              </span>
+              <span class="category__pagination-control selling-product__control-next">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div id="selling-product__drill" class="container tab-pane active p-0">
+            <div class="category__products-float selling-product__carousel">
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan Red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan Red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan Red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan Red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan Red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan Red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan Red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan Red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="category__product-heading">
+                      <a href="detail.html">Máy khoan Red Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div id="selling-product__printer" class="container tab-pane fade p-0">
+            <div class="category__products-float selling-product__carousel">
+              <div class="col-12">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="card-title category__product-heading">
+                      <a href="detail.html"></a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="card-title category__product-heading">
+                      <a href="detail.html"></a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="card-title category__product-heading">
+                      <a href="detail.html"></a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="card-title category__product-heading">
+                      <a href="detail.html"></a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="card-title category__product-heading">
+                      <a href="detail.html"></a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div id="selling-product__cnc" class="container tab-pane fade p-0">
+            <div class="category__products-float selling-product__carousel">
+              <div class="col-12">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="card-title category__product-heading">
+                      <a href="detail.html"></a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="card-title category__product-heading">
+                      <a href="detail.html"></a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="card-title category__product-heading">
+                      <a href="detail.html"></a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="card-title category__product-heading">
+                      <a href="detail.html"></a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="card-title category__product-heading">
+                      <a href="detail.html"></a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div id="selling-product__lathe" class="container tab-pane fade p-0">
+            <div class="category__products-float selling-product__carousel">
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="card-title category__product-heading">
+                      <a href="detail.html">Máy khoan Black Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="card-title category__product-heading">
+                      <a href="detail.html">Máy khoan Black Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="card-title category__product-heading">
+                      <a href="detail.html">Máy khoan Black Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="card-title category__product-heading">
+                      <a href="detail.html">Máy khoan Black Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="card-title category__product-heading">
+                      <a href="detail.html">Máy khoan Black Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div id="selling-product__another" class="container tab-pane fade p-0">
+            <div class="category__products-float selling-product__carousel">
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="card-title category__product-heading">
+                      <a href="detail.html">Máy khoan Black Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="card-title category__product-heading">
+                      <a href="detail.html">Máy khoan Black Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="card-title category__product-heading">
+                      <a href="detail.html">Máy khoan Black Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="card-title category__product-heading">
+                      <a href="detail.html">Máy khoan Black Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12 ">
+                <div class="card category__product">
+                  <a href="detail.html">
+                    <img class="card-img-top category__product-img" src="images/home/product/product1.jpg" alt="Card image cap">
+                  </a>
+                  <div class="category__product-content text-center">
+                    <span class="price">1.550.000 Đ</span>
+                    <h5 class="card-title category__product-heading">
+                      <a href="detail.html">Máy khoan Black Decker</a>
+                    </h5>
+                    <div class="category__product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span class="category__product-envaluate">(12 Đánh giá)</span>
+                    </div>
+                    <div class="action">
+                      <a href="shopping_cart.html" class="btn bg-yellow">Mua ngay</a>
+                      <a href="detail.html" class="btn bg-dark ">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="big__banner">
+        <picture class="big__banner-img">
+          <source media="(max-width: 480px)" srcset="images/home/banner/big_banner_mobile.jpg" class="w-100">
+          <img src="images/home/banner/banner_lg.jpg" alt="big banner" class="img-fluid w-100">
+        </picture>
+        <div class="big__banner-caption">
+          <h3 class="big__banner-title">Roket Wokaru</h3>
+          <p class="big__banner-paragraph">Máy cắt, khoan đa năng tích hợp điều khiển từ xa loại nhỏ thích hợp với các hộ gia đình</p>
+          <div class="product__content-action mt-0">
+            <a href="#" class="product__content-button button__yellow">Mua ngay</a>
+            <a href="#" class="product__content-button button__default">Xem chi tiết</a>
+          </div>
+        </div>
+      </section>
+      <section class="category">
+        <div class="d-flex justify-content-between align-items-center category__title">
+          <h2 class="category__heading">
+            <i class="fa fa-th-large category__title-icon " aria-hidden="true"></i>Hàng mới về</h2>
+          <div class="d-flex justify-content-between category__pagination">
+            <span class="category__pagination-control new-goods__control-prev">
+              <i class="fa fa-caret-left" aria-hidden="true"></i>
+            </span>
+            <span class="category__pagination-control new-goods__control-next">
+              <i class="fa fa-caret-right" aria-hidden="true"></i>
+            </span>
+          </div>
+        </div>
+        <div class="row category__content new-goods__carousel">
+          <div class="col-12">
+            <div class="list__item ">
+              <div class="row">
+                <div class="col-md-5 col-sm-4 col-12 ">
+                  <a href="detail.html">
+                    <img src="images/home/product/product6.jpg" alt="product" class="img-fluid m-auto">
+                  </a>
+                </div>
+                <div class="col-md-7 col-sm-8 col-12 list__item-content">
+                  <a href="detail.html">
+                    <h3 class="list__item-heading">Máy khoan CNC 3d</h3>
+                    <div class="d-flex star__rating">
+                      <div class="star__group">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+                      <span class="italic-text">(12 đánh giá)</span>
+                    </div>
+                    <p class="list__item-paragraph">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and mySliderralized
+                      by the charms of pleasure of the moment...</p>
+                    <span class="list__item-price">2.350.00 Đ</span>
+                  </a>
+                  <div class="product__content-action">
+                    <a href="shopping_cart.html" class="product__content-button button__yellow">Mua ngay</a>
+                    <a href="detail.html" class="product__content-button button__dark">Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="list__item ">
+              <div class="row">
+                <div class="col-md-5 col-sm-4 col-12 ">
+                  <a href="detail.html">
+                    <img src="images/home/product/product6.jpg" alt="product" class="img-fluid m-auto">
+                  </a>
+                </div>
+                <div class="col-md-7 col-sm-8 col-12 list__item-content">
+                  <a href="detail.html">
+                    <h3 class="list__item-heading">Máy khoan CNC 3d</h3>
+                    <div class="d-flex star__rating">
+                      <div class="star__group">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+                      <span class="italic-text">(12 đánh giá)</span>
+                    </div>
+                    <p class="list__item-paragraph">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and mySliderralized
+                      by the charms of pleasure of the moment...</p>
+                    <span class="list__item-price">2.350.00 Đ</span>
+                  </a>
+                  <div class="product__content-action">
+                    <a href="shopping_cart.html" class="product__content-button button__yellow">Mua ngay</a>
+                    <a href="detail.html" class="product__content-button button__dark">Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="list__item ">
+              <div class="row">
+                <div class="col-md-5 col-sm-4 col-12 ">
+                  <a href="detail.html">
+                    <img src="images/home/product/product6.jpg" alt="product" class="img-fluid m-auto">
+                  </a>
+                </div>
+                <div class="col-md-7 col-sm-8 col-12 list__item-content">
+                  <a href="detail.html">
+                    <h3 class="list__item-heading">Máy khoan CNC 3d</h3>
+                    <div class="d-flex star__rating">
+                      <div class="star__group">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+                      <span class="italic-text">(12 đánh giá)</span>
+                    </div>
+                    <p class="list__item-paragraph">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and mySliderralized
+                      by the charms of pleasure of the moment...</p>
+                    <span class="list__item-price">2.350.00 Đ</span>
+                  </a>
+                  <div class="product__content-action">
+                    <a href="shopping_cart.html" class="product__content-button button__yellow">Mua ngay</a>
+                    <a href="detail.html" class="product__content-button button__dark">Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="list__item ">
+              <div class="row">
+                <div class="col-md-5 col-sm-4 col-12 ">
+                  <a href="detail.html">
+                    <img src="images/home/product/product6.jpg" alt="product" class="img-fluid m-auto">
+                  </a>
+                </div>
+                <div class="col-md-7 col-sm-8 col-12 list__item-content">
+                  <a href="detail.html">
+                    <h3 class="list__item-heading">Máy khoan CNC 3d</h3>
+                    <div class="d-flex star__rating">
+                      <div class="star__group">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+                      <span class="italic-text">(12 đánh giá)</span>
+                    </div>
+                    <p class="list__item-paragraph">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and mySliderralized
+                      by the charms of pleasure of the moment...</p>
+                    <span class="list__item-price">2.350.00 Đ</span>
+                  </a>
+                  <div class="product__content-action">
+                    <a href="shopping_cart.html" class="product__content-button button__yellow">Mua ngay</a>
+                    <a href="detail.html" class="product__content-button button__dark">Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="list__item ">
+              <div class="row">
+                <div class="col-md-5 col-sm-4 col-12 ">
+                  <a href="detail.html">
+                    <img src="images/home/product/product6.jpg" alt="product" class="img-fluid m-auto">
+                  </a>
+                </div>
+                <div class="col-md-7 col-sm-8 col-12 list__item-content">
+                  <a href="detail.html">
+                    <h3 class="list__item-heading">Máy khoan CNC 3d</h3>
+                    <div class="d-flex star__rating">
+                      <div class="star__group">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+                      <span class="italic-text">(12 đánh giá)</span>
+                    </div>
+                    <p class="list__item-paragraph">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and mySliderralized
+                      by the charms of pleasure of the moment...</p>
+                    <span class="list__item-price">2.350.00 Đ</span>
+                  </a>
+                  <div class="product__content-action">
+                    <a href="shopping_cart.html" class="product__content-button button__yellow">Mua ngay</a>
+                    <a href="detail.html" class="product__content-button button__dark">Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="list__item ">
+              <div class="row">
+                <div class="col-md-5 col-sm-4 col-12 ">
+                  <a href="detail.html">
+                    <img src="images/home/product/product6.jpg" alt="product" class="img-fluid m-auto">
+                  </a>
+                </div>
+                <div class="col-md-7 col-sm-8 col-12 list__item-content">
+                  <a href="detail.html">
+                    <h3 class="list__item-heading">Máy khoan CNC 3d</h3>
+                    <div class="d-flex star__rating">
+                      <div class="star__group">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+                      <span class="italic-text">(12 đánh giá)</span>
+                    </div>
+                    <p class="list__item-paragraph">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and mySliderralized
+                      by the charms of pleasure of the moment...</p>
+                    <span class="list__item-price">2.350.00 Đ</span>
+                  </a>
+                  <div class="product__content-action">
+                    <a href="shopping_cart.html" class="product__content-button button__yellow">Mua ngay</a>
+                    <a href="detail.html" class="product__content-button button__dark">Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="list__item ">
+              <div class="row">
+                <div class="col-md-5 col-sm-4 col-12 ">
+                  <a href="detail.html">
+                    <img src="images/home/product/product6.jpg" alt="product" class="img-fluid m-auto">
+                  </a>
+                </div>
+                <div class="col-md-7 col-sm-8 col-12 list__item-content">
+                  <a href="detail.html">
+                    <h3 class="list__item-heading">Máy khoan CNC 3d</h3>
+                    <div class="d-flex star__rating">
+                      <div class="star__group">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+                      <span class="italic-text">(12 đánh giá)</span>
+                    </div>
+                    <p class="list__item-paragraph">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and mySliderralized
+                      by the charms of pleasure of the moment...</p>
+                    <span class="list__item-price">2.350.00 Đ</span>
+                  </a>
+                  <div class="product__content-action">
+                    <a href="shopping_cart.html" class="product__content-button button__yellow">Mua ngay</a>
+                    <a href="detail.html" class="product__content-button button__dark">Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="partner">
+      <div class="container">
+        <div class="partner__carousel">
+          <div class="d-flex justify-content-center partner__carousel-img">
+            <a href="#">
+              <img src="images/home/partner/artworkers.png" alt="artworkers">
+            </a>
+          </div>
+          <div class="d-flex justify-content-center  partner__carousel-img">
+            <a href="#">
+              <img src="images/home/partner/infinite_flame.png" alt="infinite_flame">
+            </a>
+          </div>
+          <div class="d-flex justify-content-center  partner__carousel-img">
+            <a href="#">
+              <img src="images/home/partner/mamolog.png" alt="mamolog">
+            </a>
+          </div>
+          <div class="d-flex justify-content-center  partner__carousel-img">
+            <a href="#">
+              <img src="images/home/partner/media_line.png" alt="media_line">
+            </a>
+          </div>
+          <div class="d-flex justify-content-center  partner__carousel-img">
+            <a href="#">
+              <img src="images/home/partner/techbrain.jpg" alt="techbrain">
+            </a>
+          </div>
+          <div class="d-flex justify-content-center  partner__carousel-img">
+            <a href="#">
+              <img src="images/home/partner/techbrain.png" alt="techbrain">
+            </a>
+          </div>
+          <div class="d-flex justify-content-center  partner__carousel-img">
+            <a href="#">
+              <img src="images/home/partner/media_line.png" alt="media_line">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="newletter d-flex justify-content-center align-items-center">
+      <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-lg-8 col-md-9">
+            <div class="newletter__content">
+              <h2 class="newletter__content-heading">Đăng ký để nhận tin tưc khuyến mại hàng tuần</h2>
+              <form action="#">
+                <div class="row">
+                  <div class="col-md-9 col-sm-10 col-12">
+                    <input type="text" class="form-control newletter-email" placeholder="Nhập email của bạn">
+                  </div>
+                  <div class="col-md-3 col-sm-2 col-12 newletter__content-button">
+                    <button type="submit" class="btn button-newletter">Đăng kí</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer__top">
+      <div class="container">
+        <div class="additional__info">
+          <div class="row">
+            <div class="col-lg-4 col-md-8 col-12 additional__info-column pr-5">
+              <h5 class="footer__top-heading">
+                <i class="fa fa-th-large footer__top-icon"></i> Về chúng tôi</h5>
+              <p class="footer__top-text">Công ty Cổ phẩn Công nghệ DKT đã và đang khẳng định được vị trí hàng đầu trong lĩnh vực Thương mại điện tử.
+              </p>
+              <ul class="contact-info">
+                <li>
+                  <i class="fa fa-map-marker mr-3" aria-hidden="true"></i>
+                  <span>Tầng 4 - Tòa nhà Hanoi Group 442 Đội Cấn Ba Đình - Hà Nội</span>
+                </li>
+                <li>
+                  <i class="fa fa-envelope mr-3" aria-hidden="true"></i>
+                  <span>
+                    support@dkt.com.vn
+                  </span>
+                </li>
+                <li>
+                  <i class="fa fa-phone font-weight-bold mr-3" aria-hidden="true"></i>
+                  <span>
+                    (84-4) 66558868 - (84-4) 37868904
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 col-12 additional__info-column">
+              <h5 class="footer__top-heading">
+                <i class="fa fa-th-large footer__top-icon"></i> Chính sách</h5>
+              <ul class="footer__top-list">
+                <li class="footer__top-item">
+                  <a href="#" class="footer__top-link">Chính sách giao hàng</a>
+                </li>
+                <li class="footer__top-item">
+                  <a href="#" class="footer__top-link">Chính sách giao hàng</a>
+                </li>
+                <li class="footer__top-item">
+                  <a href="#" class="footer__top-link">Chính sách giao hàng</a>
+                </li>
+                <li class="footer__top-item">
+                  <a href="#" class="footer__top-link">Chính sách giao hàng</a>
+                </li>
+                <li class="footer__top-item">
+                  <a href="#" class="footer__top-link">Chính sách giao hàng</a>
+                </li>
+                <li class="footer__top-item">
+                  <a href="#" class="footer__top-link">Chính sách giao hàng</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 col-12 additional__info-column">
+              <h5 class="footer__top-heading">
+                <i class="fa fa-th-large footer__top-icon"></i>Dịch vụ & hỗ trợ</h5>
+              <ul class="footer__top-list">
+                <li class="footer__top-item">
+                  <a href="#" class="footer__top-link">Chính sách giao hàng</a>
+                </li>
+                <li class="footer__top-item">
+                  <a href="#" class="footer__top-link">Chính sách giao hàng</a>
+                </li>
+                <li class="footer__top-item">
+                  <a href="#" class="footer__top-link">Chính sách giao hàng</a>
+                </li>
+                <li class="footer__top-item">
+                  <a href="#" class="footer__top-link">Chính sách giao hàng</a>
+                </li>
+                <li class="footer__top-item">
+                  <a href="#" class="footer__top-link">Chính sách giao hàng</a>
+                </li>
+                <li class="footer__top-item">
+                  <a href="#" class="footer__top-link">Chính sách giao hàng</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 col-12 additional__info-column">
+              <h5 class="footer__top-heading">
+                <i class="fa fa-th-large footer__top-icon"></i>Tin tức - Sự kiện</h5>
+              <ul class="footer__top-list">
+                <li class="footer__top-item">
+                  <a href="#" class="footer__top-link">Chính sách giao hàng</a>
+                </li>
+                <li class="footer__top-item">
+                  <a href="#" class="footer__top-link">Chính sách giao hàng</a>
+                </li>
+                <li class="footer__top-item">
+                  <a href="#" class="footer__top-link">Chính sách giao hàng</a>
+                </li>
+                <li class="footer__top-item">
+                  <a href="#" class="footer__top-link">Chính sách giao hàng</a>
+                </li>
+                <li class="footer__top-item">
+                  <a href="#" class="footer__top-link">Chính sách giao hàng</a>
+                </li>
+                <li class="footer__top-item">
+                  <a href="#" class="footer__top-link">Chính sách giao hàng</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 col-12 additional__info-column">
+              <h5 class="footer__top-heading">
+                <i class="fa fa-th-large footer__top-icon"></i>Kết nối</h5>
+              <ul>
+                <li class="footer__top-item">
+                  <a href="#" class="footer__top-link">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <span>Facebook</span>
+                  </a>
+                </li>
+                <li class="footer__top-item">
+                  <a href="#" class="footer__top-link">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <span>Twitter</span>
+                  </a>
+                </li>
+                <li class="footer__top-item">
+                  <a href="#" class="footer__top-link">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    <span>Google</span>
+                  </a>
+                </li>
+                <li class="footer__top-item">
+                  <a href="#" class="footer__top-link">
+                    <i class="fa fa-skype" aria-hidden="true"></i>
+                    <span>Skype</span>
+                  </a>
+                </li>
+                <li class="footer__top-item">
+                  <a href="#" class="footer__top-link">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <span>Instagram</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="payment__info">
+          <div class="row">
+            <div class="col-md-6 col-12 payment__method">
+              <h6 class="payment__method-heading">Thanh toán</h6>
+              <ul class="footer__payment-list">
+                <li class="footer__payment-item">
+                  <a href="#">
+                    <img src="images/home/payment/abbank.jpg" alt="" class="footer__payment-bank">
+                  </a>
+                </li>
+                <li class="footer__payment-item">
+                  <a href="#">
+                    <img src="images/home/payment/dongabank.jpg" alt="" class="footer__payment-bank">
+                  </a>
+                </li>
+                <li class="footer__payment-item">
+                  <a href="#">
+                    <img src="images/home/payment/maritimebank.jpg" alt="" class="footer__payment-bank">
+                  </a>
+                </li>
+                <li class="footer__payment-item">
+                  <a href="#">
+                    <img src="images/home/payment/techcombank.jpg" alt="" class="footer__payment-bank">
+                  </a>
+                </li>
+                <li class="footer__payment-item">
+                  <a href="#">
+                    <img src="images/home/payment/tienphongbank.jpg" alt="" class="footer__payment-bank">
+                  </a>
+                </li>
+                <li class="footer__payment-item">
+                  <a href="#">
+                    <img src="images/home/payment/vietcapitalbank.jpg" alt="" class="footer__payment-bank">
+                  </a>
+                </li>
+                <li class="footer__payment-item">
+                  <a href="#">
+                    <img src="images/home/payment/vietinbank.jpg" alt="" class="footer__payment-bank">
+                  </a>
+                </li>
+                <li class="footer__payment-item">
+                  <a href="#">
+                    <img src="images/home/payment/vpbank.jpg" alt="" class="footer__payment-bank">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-12 footer__top-answer">
+              <h6 class="payment__method-heading">Giải đáp nhanh</h6>
+              <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 footer__answer-item">
+                  <img src="images/home/icon/call.png" alt="">
+                  <div class="footer__answer-content">
+                    <span class="  d-block">Tư vấn miễn phí (24/7)</span>
+                    <span class="price">1900 650 650</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 footer__answer-item">
+                  <img src="images/home/icon/comment.png" alt="">
+                  <div class="footer__answer-content">
+                    <span class="  d-block">Gợi ý - phản hồi - thắc mắc</span>
+                    <span class="price">1900 650 650</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <div class="col-lg-4 col-md-5 col-sm-4 col-12">
+            Bản quyền thuộc về
+            <span class="footer__bottom-copyright"> Design Team </span>Phát triển bởi
+            <span class="footer__bottom-copyright"> Bizweb </span>.
+          </div>
+          <ul class="col-lg-4 col-md-6 col-sm-8 col-12 footer__bottom-navigation">
+            <li class="footer__bottom-item">
+              <a href="index.html" class="footer__bottom-link">Trang chủ</a>
+            </li>
+            <li class="footer__bottom-item">
+              <a href="blog.html" class="footer__bottom-link">Tin tức</a>
+            </li>
+            <li class="footer__bottom-item">
+              <a href="product.html" class="footer__bottom-link">Sản phẩm</a>
+            </li>
+            <li class="footer__bottom-item">
+              <a href="introduce.html" class="footer__bottom-link">Giới thiệu</a>
+            </li>
+            <li class="footer__bottom-item">
+              <a href="contact.html" class="footer__bottom-link">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
