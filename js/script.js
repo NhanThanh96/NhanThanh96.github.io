@@ -1,10 +1,10 @@
 $(document).ready(function(){
    // popup
-//    $("#register-modal").modal("show").on("shown", function () {
-//     window.setTimeout(function () {
-//         $("#register-modal").modal("hide");
-//     }, 5000);
-// });
+   $("#register-modal").modal("show").on("shown", function () {
+    window.setTimeout(function () {
+        $("#register-modal").modal("hide");
+    }, 5000);
+});
 $('#mySlider').on('slide.bs.carousel', function (e) {
 
   var slideFrom = $(this).find('.active').index();

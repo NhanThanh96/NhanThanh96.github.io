@@ -510,6 +510,7 @@ a:active {
 	-moz-box-shadow: 0 0 20px #999;
 	-webkit-box-shadow: 0 0 20px #999;
 	box-shadow: 0 0 20px #999;
+	
 }
 
 .bg-yellow {
@@ -1002,7 +1003,7 @@ ul.path__list li a:hover {
 /* sidebar new */
 
 .blog__content {
-	margin-top: 2.9rem;
+	margin-top: 3.5rem;
 	margin-bottom: 9.6rem;
 }
 
@@ -1037,10 +1038,6 @@ ul.path__list li a:hover {
 }
 
 /* sidebar gallery */
-
-.sidebar__gallery {
-	margin-bottom: 2.8rem;
-}
 
 .sidebar__gallery-head {
 	margin-bottom: 2.2rem;
@@ -1094,7 +1091,7 @@ ul.path__list li a:hover {
 /* article */
 
 .article {
-	padding: 3.8rem 0 2.7rem;
+	padding: 3.8rem 0 2.2rem;
 	border-bottom: 1px solid #7c7c7c;
 }
 
@@ -1527,7 +1524,7 @@ ul.path__list li a:hover {
 
 .form__content-heading {
 	font-size: 1.4rem;
-	margin-bottom: 4rem;
+	margin-bottom: 3rem;
 	color: #000;
 	text-transform: uppercase;
 }
@@ -1718,7 +1715,7 @@ ul.path__list li a:hover {
 
 .contact__content,
 .introduce {
-	margin: 6rem 0;
+	margin: 3.5rem 0 6rem;
 }
 
 .message {
@@ -1734,9 +1731,6 @@ ul.path__list li a:hover {
 }
 
 @media (max-width:1024px) {
-	.header-bottom__icon {
-		top: 33%;
-	}
 	.big__banner-title {
 		font-size: 3rem;
 	}
@@ -1821,9 +1815,7 @@ ul.path__list li a:hover {
 	.menu__item {
 		border: 0;
 	}
-	.cart {
-		border-bottom: 1px solid #7c7c7c;
-	}
+	 
 	.slider__product-type {
 		font-size: 2.3rem;
 	}
@@ -1849,6 +1841,13 @@ ul.path__list li a:hover {
 	}
 	.sidebar__product-info {
 		padding-right: 3rem;
+	}
+	/* ================ blog page responsive============== */
+	.articles{
+		margin-top: 2rem;
+	}
+	.detail-blog__content{
+		margin-top: 2rem;
 	}
 }
 
@@ -1983,6 +1982,7 @@ ul.path__list li a:hover {
 		display: none;
 	}
 	/*=============== blog detail responsive ==================== */
+	
 	.article__tag {
 		margin-bottom: 2rem;
 	}
@@ -2007,11 +2007,11 @@ ul.path__list li a:hover {
 
 	/* ================ login page responsive================= */
 	.login__form {
-		margin-bottom: 3rem;
+		margin-bottom: 4rem;
 	}
 	/* ================= contact page responsive ========================== */
 	.contact__form {
-		margin-top: 6rem;
+		margin-top: 7rem;
 	}
 	/* ================= introduce page responsive ========================== */
 	.introduce__product {
