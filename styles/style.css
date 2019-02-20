@@ -541,14 +541,14 @@ a:active {
 .slick-prev:before {
 	font-family: "Font Awesome 5 Free";
 	font-weight: 700;
-	content: "\f007";
+	content: "\f053";
 	color: #7c7c7c;
 }
 
 .slick-next:before {
 	font-family: "Font Awesome 5 Free";
 	font-weight: 700;
-	content: "\f105";
+	content: "\f054";
 	color: #7c7c7c;
 }
 
