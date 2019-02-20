@@ -488,7 +488,6 @@ a:active {
 	text-align: center;
 	font-size: 1.2rem;
 	color: #fff;
-
 	text-transform: uppercase;
 	background-color: #f5bd10;
 	border-radius: 0;
@@ -1740,6 +1739,9 @@ ul.path__list li a:hover {
 	}
 	.sidebar__gallery-content img {
 		margin-bottom: 3rem;
+	}
+	.action .btn {
+		min-width: 9rem;
 	}
 }
 
