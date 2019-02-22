@@ -305,11 +305,13 @@ a:active {
 	border-top: 1px solid #a1a1a1;
 	border-left: 1px solid #a1a1a1;
 	border-right: 1px solid #a1a1a1;
+	display: flex;
+	align-items: center;
 }
 
 /* benifits */
 
-.slider-info .slider-info__item:last-of-type {
+.slider-info li:last-of-type {
 	border-bottom: 1px solid #a1a1a1;
 }
 
@@ -327,6 +329,12 @@ a:active {
 .slider-info__icon {
 	font-size: 2.5rem;
 	color: #f5bd10;
+	padding: 0 3rem;
+}
+
+.slider-info__desc{
+	display: inline-block;
+	padding-right: 0.5rem;
 }
 
 .slider-info__heading {
@@ -403,7 +411,7 @@ a:active {
 
 .category__sidebar-item {
 	border-bottom: 1px solid #898989;
-	padding: 2rem 0 2rem 1.8rem;
+	
 }
 
 .category__sidebar-item:last-child {
@@ -416,8 +424,9 @@ a:active {
 }
 
 .category__sidebar-link {
-
+	display: block;
 	color: #898989;
+	padding: 2rem 0 2rem 1.8rem;
 }
 
 .category__sidebar-item:hover {
@@ -441,7 +450,7 @@ a:active {
 
 .category__product {
 	padding: 0 0.7rem 2rem;
-	margin-bottom: 4.2rem;
+	margin-bottom: 4.1rem;
 	-moz-box-shadow: 0 0 3px rgb(202, 195, 195);
 	-webkit-box-shadow: 0 0 3px rgb(202, 195, 195);
 	box-shadow: 0 0 3px rgb(202, 195, 195);
@@ -449,7 +458,7 @@ a:active {
 
 .category__product-img {
 	width: 70%;
-	margin: 0 auto;
+	margin: 1rem auto 1.5rem;
 }
 
 .price {
@@ -484,6 +493,10 @@ a:active {
 	color: #898989;
 }
 
+.action {
+	display: none;
+}
+
 .action .btn {
 	text-align: center;
 	font-size: 1.2rem;
@@ -494,9 +507,8 @@ a:active {
 	line-height: 3.2rem;
 	min-width: 11rem;
 }
-
-.action {
-	display: none;
+.action .btn:first-of-type{
+	margin-right: 0.3rem;
 }
 
 .category__product:hover .action {
@@ -599,7 +611,7 @@ a:active {
 .big__banner-caption {
 	text-align: center;
 	position: absolute;
-	top: 6%;
+	top: 11%;
 	right: 7%;
 	max-width: 44rem;
 }
@@ -1028,7 +1040,6 @@ ul.path__list li a:hover {
 }
 
 .sidebar__new-item {
-	padding: 2.3rem 0;
 	border-bottom: 1px solid #7c7c7c;
 }
 
@@ -1699,8 +1710,12 @@ ul.path__list li a:hover {
 	margin-top: 2rem;
 	color: #000;
 	font-size: 1.4rem;
+	display: flex;
+	align-items: center;
 }
-
+.register-modal__checkbox input{
+	margin-right: 0.8rem;
+}
 .register-modal-content .register-modal__close {
 	font-size: 3rem;
 	background-color: #000;
@@ -1742,6 +1757,9 @@ ul.path__list li a:hover {
 	}
 	.action .btn {
 		min-width: 8rem;
+	}
+	.big__banner-caption{
+		top:5%;
 	}
 }
 
